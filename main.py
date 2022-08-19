@@ -6,7 +6,6 @@ import random
 import glob
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
-from WolfXRobot import telethn as tbot, ubot2
 from telethon import events, Button, custom
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 import requests
