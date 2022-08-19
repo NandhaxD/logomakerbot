@@ -11,7 +11,7 @@ pyrobot = Client("logomaker", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TO
 
 @pyrobot.on_message(filters.private, filters.incoming)
 async def logomaker(_, message):
-       if message.text:
+       if not message.text:
           await message.reply_text("send me text")
           return 
        elif message.text:
