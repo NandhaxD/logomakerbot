@@ -16,7 +16,8 @@ async def logomaker(_, message):
           return 
        elif message.text:
           text = message.text
-          logo = get((f"https://single-developers.up.railway.app/logo?name={text}").replace(' ','%20')).history[1].url
+          await message.reply_text("Processing your request")
+          logo = get((f"https://single-developers.up.railway.app/logo?name={text}")
           await pyrobot.send_photo(message.chat.id, photo=logo)
        
       
