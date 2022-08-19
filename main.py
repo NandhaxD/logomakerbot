@@ -1,5 +1,7 @@
 from pyrogram import filters, Client 
 from pyrogram.types import *
+import os
+from requests import get
 
 API_ID = os.environ.get("API_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
