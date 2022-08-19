@@ -1,3 +1,4 @@
 requests
 tgcrypto
 pyrogram
+pillow
