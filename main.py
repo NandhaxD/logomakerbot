@@ -17,4 +17,4 @@ async def logomaker(_, message):
       
       
       
-pyrobot.run
+pyrobot.run()
