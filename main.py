@@ -9,7 +9,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 
 pyrobot = Client("logomaker", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
-@bot.on_message(filters.private, filters.incoming)
+@pyrobot.on_message(filters.private, filters.incoming)
 async def logomaker(_, message):
        if message.text:
           await message.reply_text("send me text")
