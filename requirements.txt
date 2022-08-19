@@ -1,4 +1,3 @@
 requests
-tgcrypto
-pyrogram
+telethon
 pillow
