@@ -22,4 +22,4 @@ LOGO_API_URL2 = "https://techzbotsapi.herokuapp.com/logo?square=true&text="
 pyrobot = Client("logomaker", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)   
       
 print("[INFO]: STARTING BOT...")
-pyrobot.start()
+pyrobot.run()
