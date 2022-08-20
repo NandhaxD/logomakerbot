@@ -18,4 +18,4 @@ Buttons = [[ InlineKeyboardButton(text="Support", url=f"t.me/{support}"),
 async def start(_, message):
       logomakerbot = "https://telegra.ph/file/f1958a5500458504879a7.jpg"
       await message.reply_photo(photo=logomakerbot,
-      START_text.format(message.from_user.mention),reply_markup=InlineKeyboardMarkup(Buttons))
+      caption=START_text.format(message.from_user.mention),reply_markup=InlineKeyboardMarkup(Buttons))
