@@ -1,5 +1,5 @@
 from pyrogram import filters 
-from main import bot, support 
+from main import pyrobot, support 
 from pyrogram.types import *
 from main.makelogo import generate_logo
 
@@ -11,7 +11,7 @@ No_text = """ ʜᴏᴡ ᴄᴀɴ ɪ ᴄʀᴇᴀᴛᴇ ᴀ ʟᴏɢᴏ
 if comes error pls contact {}
 """
 
-@bot.on_message(filters.command("logo"))
+@pyrobot.on_message(filters.command("logo"))
 async def makelogo(_, message):
       if len(message.command) <2:
          await message.reply_text(No_text)
