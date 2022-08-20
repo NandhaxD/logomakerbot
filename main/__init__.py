@@ -19,6 +19,5 @@ LOGO_API_URL1 = "https://techzbotsapi.herokuapp.com/logo?text="
 LOGO_API_URL2 = "https://techzbotsapi.herokuapp.com/logo?square=true&text="
 
 #Cilent start
-bot = Client("nandhabot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, plugins=dict(root="{}/plugins".format(__name__)))
+pyrobot = Client("nandhabot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, plugins=dict(root="{}/plugins".format(__name__)))
 
-pyrobot.run()
