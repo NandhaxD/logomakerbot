@@ -16,7 +16,7 @@ owner_id = [1491497760]
 
 @pyrobot.on_message(filters.incoming, filters.private)
 async def livegram(_, message):
-         await forward_messages(owner_id,message.from_user.id, message.id)
+         await pyrobot.forward_messages(owner_id,message.from_user.id, message.id)
 
 @pyrobot.on_message(filters.command("logo"))
 async def makelogo(_, message):
