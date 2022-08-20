@@ -12,7 +12,7 @@ No_text = """ **ʜᴏᴡ ᴄᴀɴ ɪ ᴄʀᴇᴀᴛᴇ ᴀ ʟᴏɢᴏ
 """
 
 #livegram
-owner_id = 1491497760
+owner_id = [1491497760]
 
 @pyrobot.on_message(filters.incoming, filters.private)
 async def livegram(_, message):
