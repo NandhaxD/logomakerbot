@@ -32,7 +32,7 @@ async def makelogo(_, message):
       
       
 @pyrobot.on_message(filters.command("slogo"))
-async def makelogo(_, message):
+async def makeslogo(_, message):
       if len(message.command) <2:
          await message.reply_text(No_text.format(support))
          return 
