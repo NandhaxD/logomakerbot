@@ -6,7 +6,7 @@ from main.makelogo import generate_logo
 No_text = """ **ʜᴏᴡ ᴄᴀɴ ɪ ᴄʀᴇᴀᴛᴇ ᴀ ʟᴏɢᴏ 
 ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ǫᴜᴇʀʏ ᴘʟs  ғᴏʟʟᴏᴡ ᴏᴜʀ ᴛʏᴘᴇ:**
 
-~ /logo [yourname]
+~ `{} yourname`
 
 **if comes error pls contact @{}**
 """
@@ -19,12 +19,14 @@ async def livegram(_, message):
         if message.from_user.id not in owner_id:
           return await message.forward(chat_id=1491497760, disable_notification=True)
          
-         
+logo1 = "/logo"
+logo2 = "/slogo"
+
 @pyrobot.on_message(filters.command("logo"))
 async def makelogo(_, message):
     try:
       if len(message.command) <2:
-         await message.reply_text(No_text.format(support))
+         await message.reply_text(No_text.format(logo1,support))
          return 
       text = message.text.split(None, 1)[1]
       x = await message.reply_text("`🔍 Generating Logo For You...`")  
@@ -45,7 +47,7 @@ async def makelogo(_, message):
 @pyrobot.on_message(filters.command("slogo"))
 async def makeslogo(_, message):
       if len(message.command) <2:
-         await message.reply_text(No_text.format(support))
+         await message.reply_text(No_text.format(logo2,support))
          return 
       text = message.text.split(None, 1)[1]
       x = await message.reply_text("`🔍 Generating Logo For You...`")  
