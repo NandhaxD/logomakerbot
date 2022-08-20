@@ -4,6 +4,7 @@ import os
 from requests import get
 import aiohttp
 
+
 API_ID = os.environ.get("API_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
@@ -11,6 +12,8 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 print("[INFO]: STARTING AIOHTTP CLIENT")
 session = aiohttp.ClientSession()
 
+support = "nandhasupport"
+updates = "nandhaupdates"
 #logo api's
 LOGO_API_URL1 = "https://techzbotsapi.herokuapp.com/logo?text="
 LOGO_API_URL2 = "https://techzbotsapi.herokuapp.com/logo?square=true&text="
