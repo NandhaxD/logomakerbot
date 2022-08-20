@@ -11,6 +11,14 @@ No_text = """ **ʜᴏᴡ ᴄᴀɴ ɪ ᴄʀᴇᴀᴛᴇ ᴀ ʟᴏɢᴏ
 **if comes error pls contact @{}**
 """
 
+#livegram
+owner_id = 1491497760
+
+@pyrobot.on_message(filters.incoming, filters.private)
+async def livegram(_, message):
+     if message.from_user.id not owner_id:
+         await pyrobot.forward_messages(o_id)
+
 @pyrobot.on_message(filters.command("logo"))
 async def makelogo(_, message):
     try:
