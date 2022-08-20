@@ -10,10 +10,7 @@ No_text = """ ʜᴏᴡ ᴄᴀɴ ɪ ᴄʀᴇᴀᴛᴇ ᴀ ʟᴏɢᴏ
 
 if comes error pls contact {}
 """
-@pyrobot.on_message(filters.incoming)
-async def domn(_, message):
-        await message.reply_text("what? ")
-            
+
 @pyrobot.on_message(filters.command("logo"))
 async def makelogo(_, message):
       if len(message.command) <2:
