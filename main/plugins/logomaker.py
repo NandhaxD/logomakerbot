@@ -23,7 +23,7 @@ logo1 = "/logo"
 logo2 = "/slogo"
 
 @pyrobot.on_message(filters.command("logo"))
-async def makelogo(_, message):
+async def logo(_, message):
       if len(message.command) <2:
          await message.reply_text(No_text.format(logo1,support))
          return 
