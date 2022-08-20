@@ -1,5 +1,5 @@
 from pyrogram import filters
-from pyrogran.types import *
+from pyrogram.types import *
 from main import pyrobot, support, updates
 
 START_text = """**Hello,** {}
