@@ -26,7 +26,7 @@ async def animelogo(_, message):
             await message.reply_text(No_text.format(logo0,support))
             return 
         text = message.text.split(None, 1)[1]
-        logo = animelogo + text
+        logo = (animelogo + text)
         x = await message.reply_text("`🔍 Generating Logo For You...`")  
         url = requests.get(logo).url
         await x.edit("`🔄 Done Generated... Now Sending You`")
