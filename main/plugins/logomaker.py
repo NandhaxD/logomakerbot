@@ -13,10 +13,24 @@ No_text = """ **ʜᴏᴡ ᴄᴀɴ ɪ ᴄʀᴇᴀᴛᴇ ᴀ ʟᴏɢᴏ
 
 #livegram
 
-logo1 = "/logo"
+logo0 = "/logo"
+logo1 = "/rlogo"
 logo2 = "/slogo"
 
+import requests
+
+MUKUND"
+req = requests.get(API).url
+
+
+# ==== OUTPUT ===
+'https://telegra.ph/file/1c50b0e4e3dc7e37220fc.png'
+
 @pyrobot.on_message(filters.command("logo"))
+async def animelogo(_, message):
+      
+
+@pyrobot.on_message(filters.command("rlogo"))
 async def logo(_, message):
       if len(message.command) <2:
          await message.reply_text(No_text.format(logo1,support))
