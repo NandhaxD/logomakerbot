@@ -2,6 +2,7 @@ from pyrogram import filters
 from main import pyrobot, support, LOGO_API_URL0 as animelogo
 from pyrogram.types import *
 from main.makelogo import generate_logo
+import requests
 
 No_text = """ **ʜᴏᴡ ᴄᴀɴ ɪ ᴄʀᴇᴀᴛᴇ ᴀ ʟᴏɢᴏ 
 ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ǫᴜᴇʀʏ ᴘʟs  ғᴏʟʟᴏᴡ ᴏᴜʀ ᴛʏᴘᴇ:**
