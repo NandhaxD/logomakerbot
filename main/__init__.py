@@ -15,6 +15,7 @@ session = aiohttp.ClientSession()
 support = "nandhasupport"
 updates = "nandhabots"
 #logo api's
+LOGO_API_URL0 = "https://api.sdbots.tk/anime-logo?name="
 LOGO_API_URL1 = "https://techzbotsapi.herokuapp.com/logo?text="
 LOGO_API_URL2 = "https://techzbotsapi.herokuapp.com/logo?square=true&text="
 
