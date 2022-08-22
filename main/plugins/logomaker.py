@@ -20,9 +20,6 @@ logo2 = "/slogo"
 
 
 
-# ==== OUTPUT ===
-'https://telegra.ph/file/1c50b0e4e3dc7e37220fc.png'
-
 @pyrobot.on_message(filters.command("logo"))
 async def animelogo(_, message):
         if len(message.command) <2:
