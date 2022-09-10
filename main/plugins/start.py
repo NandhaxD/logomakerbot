@@ -4,14 +4,16 @@ from main import pyrobot, support, updates
 
 START_text = """**Hello,** {}
 
-**Iam A LogomakingBot I can make logo for you 
+<blod> Iam A LogomakingBot I can make logo for you 
 
 use: /logo name | for normal logos. 
-use: /slogo name | for square type logos.**
+use: /slogo name | for square type logos.
+us /rlogo name | for random logos. </blod>
 """
 
 Buttons = [[ InlineKeyboardButton(text="Support", url=f"t.me/{support}"),
-             InlineKeyboardButton(text="Updates", url=f"t.me/{updates}")]]
+             InlineKeyboardButton(text="Updates", url=f"t.me/{updates}")],[
+InlineKeyboardButton(text="By Nandha", user_id=1491497760)]]
   
   
 @pyrobot.on_message(filters.command("start"))
