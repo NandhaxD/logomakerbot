@@ -81,7 +81,7 @@ async def squarelogo(_, message):
       await x.delete()
       
 
-@pyrobot.on_callback_query(filters.regex("flogo"))
+@pyrobot.on_callback_query()
 async def flogo(_, query):
     if query.data == "flogo":
           x = await query.message.reply_text("`🔄 Sending You The Logo As File`")
