@@ -25,7 +25,7 @@ logo2 = "/slogo"
 async def animelogo(_, message):
         try: 
             if len(message.command) <2:
-               retrun await message.reply_text(No_text.format(logo0,support))
+               return await message.reply_text(No_text.format(logo0,support))
             text = message.text.split(None, 1)[1]
             x = await message.reply_text("`🔍 Generating Logo For You...`")  
             url = f"https://api.sdbots.tk/anime-logo?name={text}"
